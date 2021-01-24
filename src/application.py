@@ -1,21 +1,17 @@
-from model.person import Person
-from tmp.Tmp import asdf as my_string
+from flask import Flask
+from flask import render_template
 
-print(my_string)
+app = Flask(__name__)
 
 
+@app.route("/")
 def hello():
-    return "Hi there"
+    return render_template('index.html', banner_msg="yo yo")
 
 
-def good_bye():
-    return "Adios"
-
-
+# run the application
 if __name__ == "__main__":
-    p = Person("Bob")
-    print(f'{hello()} {p.name}')
-
+    app.run(debug=True)
 
 
 

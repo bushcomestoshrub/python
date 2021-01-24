@@ -1,0 +1,18 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>Flask Yo</title>
+  <meta name="myKey" content="myValue">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <h1>{{banner_msg}}</h1>
+  <p id = "htmlpara">Html Para</p>
+  <p id = "jspara"></p>
+
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
+

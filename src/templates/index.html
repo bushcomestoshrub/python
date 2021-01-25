@@ -9,8 +9,22 @@
 
 <body>
   <h1>{{banner_msg}}</h1>
-  <p id = "htmlpara">Html Para</p>
-  <p id = "jspara"></p>
+  <div class="empty">
+  </div>
+  <div class="container">
+    <div class="center">
+      <button id = "button" onclick="toggle()">its button</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="toggle" id="tmp">
+      <p>this is toggled text</p>
+    </div>
+  </div>
+
+  <p id = "para"></p>
+
 
   <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
